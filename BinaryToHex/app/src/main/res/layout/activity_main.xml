@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Application"
+        android:background="#673AB7"
+        android:layout_alignParentTop="true"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:padding="18dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:id="@+id/editText"
+        android:hint="Enter a Number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:id="@+id/spn"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spn"
+        android:id="@+id/cnv"
+        android:layout_centerHorizontal="true"
+        android:text="Convert"
+        android:layout_marginTop="18dp"
+        android:background="#03A9F4"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Result"
+        android:id="@+id/result"
+        android:layout_below="@+id/cnv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        />
+</RelativeLayout>
