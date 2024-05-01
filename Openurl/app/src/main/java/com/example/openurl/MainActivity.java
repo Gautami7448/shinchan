@@ -1,6 +1,11 @@
 package com.example.openurl;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -8,21 +13,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    TextView t1, t2, t3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        List<TableRow> tableRows = new ArrayList<>();
-        tableRows.add(new TableRow("Java", "James Gosling", "https://www.java.com"));
-        tableRows.add(new TableRow("Python", "Guido van Rossum", "https://www.python.org"));
-        tableRows.add(new TableRow("C++", "Bjarne Stroustrup", "https://www.cplusplus.com"));
-
-        TableAdapter adapter = new TableAdapter(tableRows, this);
-        recyclerView.setAdapter(adapter);
+        t1 = findViewById(R.id.javaa);
+        t3 = findViewById(R.id.cppp);
+        t2 = findViewById(R.id.pythona);
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openUrlInBrowser("https://www.java.com");
+            }
+        });
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openUrlInBrowser("https://www.python.org");
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openUrlInBrowser("https://cplusplus.com");
+            }
+        });
     }
-}
+
+        private void openUrlInBrowser (String url){
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        }
+    }
