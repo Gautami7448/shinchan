@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TableRow>
+            <TextView
+                android:text="Language"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#052907"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="Creator"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="#052907"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="Reference"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#052907"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Java"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="#80E384"
+                android:gravity="center" />
+            <TextView
+                android:text="J.Gosling"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#80E384"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="java.com"
+                android:textSize="18sp"
+                android:id="@+id/javaa"
+                android:textStyle="bold"
+                android:background="#80E384"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Python"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#43AE47"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="G. V. Rossum"
+                android:textSize="18sp"
+                android:background="#43AE47"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="python.org"
+                android:textSize="18sp"
+                android:background="#43AE47"
+                android:textStyle="bold"
+                android:id="@+id/pythona"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="C++"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#80E384"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="B. Stroustrup"
+                android:textSize="18sp"
+                android:background="#80E384"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:text="cplusplus.com"
+                android:textSize="18sp"
+                android:background="#80E384"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/cppp"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
