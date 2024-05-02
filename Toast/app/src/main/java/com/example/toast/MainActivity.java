@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 });
                 snackbar.show();
             }
+
         });
 
         Button toastButton = findViewById(R.id.toast_button);

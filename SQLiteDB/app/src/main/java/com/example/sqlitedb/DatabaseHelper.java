@@ -47,10 +47,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result != -1;
     }
 
-    public Cursor getData() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.query(TABLE_NAME, null, null, null, null, null, null);
-    }
+//    public Cursor getData() {
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        return db.query(TABLE_NAME, null, null, null, null, null, null);
+//    }
 
     public void deleteData() {
         SQLiteDatabase db = this.getWritableDatabase();
